@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<log4net>
+  <appender name="RollingFileAppender" type="log4net.Appender.RollingFileAppender">
+    <file type="log4net.Util.PatternString" value="%property{LogFileName}%property{LogFileDate}.log" />
+    <appendToFile value="true" />
+    <rollingStyle value="Size" />
+    <maxSizeRollBackups value="10" />
+    <maximumFileSize value="1MB" />
+    <staticLogFileName value="false" />
+    <layout type="ESRINederland.Framework.Logging.FrameworkPatternLayout">
+      <conversionPattern value="%date{dd-MM-yyyy HH:mm:ss} [%level] %message%newline" />
+    </layout>
+  </appender>
+  <root>
+    <level value="ALL" />
+    <!--<level value="INFO" />-->
+    <appender-ref ref="RollingFileAppender" />
+  </root>
+</log4net>
