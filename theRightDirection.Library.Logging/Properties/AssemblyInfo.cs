@@ -5,8 +5,8 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("the Right Direction Library")]
-[assembly: AssemblyDescription("General functions for different purposes")]
+[assembly: AssemblyTitle("the Right Direction Logging Library")]
+[assembly: AssemblyDescription("Logging based on log4net")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("the Right Direction")]
 [assembly: AssemblyProduct("the Right Direction Logging Library")]
